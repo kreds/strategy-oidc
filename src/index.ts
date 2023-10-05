@@ -87,7 +87,9 @@ export class OIDCAuthenticationStrategy<TUser> implements KredsStrategy<TUser> {
 
   configuration: OpenIDConfiguration = {};
 
-  constructor(private config: OIDCAuthenticationStrategyConfig<TUser>) {}
+  constructor(private config: OIDCAuthenticationStrategyConfig<TUser>) {
+    this.init();
+  }
 
   private async init() {
     const url = new URL(
