@@ -1,0 +1,9 @@
+__tests__
+jest.config.js
+yarn.lock
+.DS_Store
+*.log
+src
+tsconfig.json
+.prettierrc
+LICENSE

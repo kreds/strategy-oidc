@@ -1,0 +1,43 @@
+{
+  "name": "@kreds/strategy-oidc",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint src"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Mat Sz <contact@matsz.dev>",
+  "license": "BSD-3-Clause-Clear",
+  "private": false,
+  "dependencies": {
+    "@kreds/types": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kreds/strategy-oidc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kreds/strategy-oidc/issues"
+  },
+  "homepage": "https://github.com/kreds/strategy-oidc",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
